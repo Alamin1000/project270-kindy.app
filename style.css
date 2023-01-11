@@ -91,6 +91,11 @@ p:last-child{
     max-width: 1165px;
   }
 }
+@media (max-width: 575px) {
+  .container {
+    padding: 0 5%;
+  }
+}
 
 
 
@@ -172,11 +177,13 @@ p:last-child{
   color: #97A3AE;
 }
 .offcanvas-close {
-  color: var(--theme__color1);
+  color: #000;
   position: absolute;
   transition: 0.3s;
-  right: 25px;
-  top: 25px;
+  right: 15px;
+  top: 15px;
+  line-height: 1;
+  font-size: 22px;
 }
 .offcanvas-close:hover {
   color: #97A3AE;
@@ -199,7 +206,7 @@ p:last-child{
   min-width: 200px;
   z-index: 5;
   position: relative;
-  background: #d5dce2;
+  background: #fff;
   height: 100%;
   padding: 50px 20px 40px;
   overflow: auto;
@@ -209,12 +216,15 @@ p:last-child{
 .offcanvas-menu .offmenu :-webkit-scrollbar {
   display: none;
 }
-.offcanvas-menu ul li a {
+.mobile-menu li a {
   display: block;
   text-align: center;
   font-size: 16px;
-  color: var(--theme__color1);
+  color: #000;
   padding: 10px;
+}
+.mobile-menu li a:hover {
+  color: var(--theme__color1);
 }
 .dropdown-menu-custom ul {
   background: #fff;
@@ -501,10 +511,10 @@ p:last-child{
   flex-grow: 1;
 }
 .press__brand {
-
+  border-radius: 30px;
 }
 .press__brand img {
-
+  border-radius: inherit;
 }
 .press__r-card {
   padding: 34px 40px;
@@ -574,7 +584,7 @@ p:last-child{
 
 /* ---faq-section--- */
 .faq-section {
-  padding: 90px;
+  padding: 90px 0;
 }
 .faq-section__inner {
 

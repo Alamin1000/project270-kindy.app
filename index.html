@@ -28,29 +28,16 @@
     <div class="main-wrap">
       <!-- offcanvas-start -->
       <div class="offcanvas-menu">
-        <ul class="offmenu" id="menuParent">
-          <a href="#" class="offcanvas-close"><i class="fa fa-times"></i></a>
-          <li class="active"><a href="#">HOME</a></li>
-          <li><a href="#">ABOUT US</a></li>
-          <li class="dropdown">
-            <a href="#" data-bs-toggle="collapse" data-bs-target="#drop-menu1"
-              >OUR HORSES</a
-            >
-            <div
-              class="dropdown-menu-custom collapse"
-              id="drop-menu1"
-              data-bs-parent="#menuParent"
-            >
-              <ul>
-                <li><a href="#">YEARLINGS</a></li>
-                <li><a href="#">2 YEAR OLDS</a></li>
-                <li><a href="#">3 YEAR OLD PLUS</a></li>
-              </ul>
-            </div>
-          </li>
-          <li><a href="#">LATEST NEWS</a></li>
-          <li><a href="#">CONTACT & FIND US</a></li>
-        </ul>
+        <div class="offmenu" id="menuParent">
+          <a href="#" class="offcanvas-close"><i class="fal fa-times"></i></a>
+          <ul class="mobile-menu">
+            <li><a href="#">Start</a></li>
+            <li><a href="#">Über uns</a></li>
+            <li><a href="#">Lösungen</a></li>
+            <li><a href="#">Preise</a></li>
+            <li><a href="#">Kontakt</a></li>
+          </ul>
+        </div>
       </div>
       <div class="offcanvas-overlay"></div>
       <!-- offcanvas-start-end -->
@@ -63,7 +50,7 @@
               <a href="/" class="header__logo">
                 <img src="images/logo.png" alt="" />
               </a>
-              <div class="header__right">
+              <div class="header__right d-lg-flex d-none">
                 <div class="main-menu">
                   <ul>
                     <li><a href="#">Start</a></li>
@@ -75,6 +62,9 @@
                 </div>
                 <a href="#" class="hr-button">Jetzt testen!</a>
               </div>
+              <a href="javascript:void(0)" class="offcanvas-open d-lg-none">
+                <img src="images/hamburger.svg" alt="" />
+              </a>
             </div>
           </div>
         </div>
@@ -88,9 +78,14 @@
           <div class="container">
             <div class="hero-section__inner">
               <div class="hero__content">
-                <div class="h4-bx bg-theme2">Moin!</div>
-                <h1 class="h1">Hier ist Kindy.</h1>
-                <p>Wir sind digital an Ihrer Seite.</p>
+                <div class="hero__content__mobile-image d-md-none">
+                  <img src="images/hero-img-mobile.png" alt="" />
+                </div>
+                <div class="hero__content__inner">
+                  <div class="h4-bx bg-theme2">Moin!</div>
+                  <h1 class="h1">Hier ist Kindy.</h1>
+                  <p>Wir sind digital an Ihrer Seite.</p>
+                </div>
               </div>
             </div>
           </div>
@@ -112,7 +107,7 @@
                 </p>
               </div>
 
-              <div class="about-grid">
+              <div class="about-grid about-grid-slider-active">
                 <div class="about-grid__item item-r3">
                   <img src="images/about-block-1.png" alt="" class="img" />
                 </div>
@@ -239,7 +234,7 @@
                   <div class="press__brand">
                     <img src="images/press-brand-8.png" alt="" />
                   </div>
-                  <div class="press__brand">
+                  <div class="press__brand d-md-block d-none">
                     <img src="images/press-brand-9.png" alt="" />
                   </div>
                   <div class="press__brand">
@@ -306,7 +301,7 @@
                   <div class="top-image"></div>
                   <div class="cont-blk">
                     <h4 class="h4 h4-bx bg-white color-theme4">Video</h4>
-                    <h3 class="h3">Fernsehbeitrag im NDR über Kindy.</h3>
+                    <h3 class="h3">Fernsehbeit rag im NDR über Kindy.</h3>
                     <a
                       href="#"
                       class="button default-button default-button--bordered-white bottom-button mt-2"
@@ -414,6 +409,9 @@
         <div class="footer__top___outer">
           <div class="container">
             <div class="footer__top">
+              <a href="index.html" class="footer-logo d-md-none d-block"
+                ><img src="images/logo-white.svg" alt=""
+              /></a>
               <div class="footer-menu-column">
                 <h4>Kindy App</h4>
                 <ul class="footer-menu">
