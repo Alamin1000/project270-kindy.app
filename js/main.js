@@ -24,7 +24,7 @@
 
   function owlInitialize() {
     let slider = $(".about-grid-slider-active");
-    if ($(window).width() < 767) {
+    if ($(window).width() < 991) {
       slider.addClass("owl-carousel");
       slider.owlCarousel({
         loop: true,
@@ -44,7 +44,7 @@
             stagePadding: 30,
             autoWidth: true,
           },
-          575: {
+          767: {
             items: 2,
             stagePadding: 0,
           },
@@ -61,6 +61,19 @@
   $(window).resize(function () {
     owlInitialize();
   });
+
+  document
+    .querySelector(".c-expand-button")
+    .addEventListener("click", function (e) {
+      let card = this.parentElement;
+      card.classList.add("active");
+    });
+  document
+    .querySelector(".c-expand-button-2")
+    .addEventListener("click", function (e) {
+      let card = this.parentElement;
+      card.classList.add("active");
+    });
 })(jQuery);
 
 $(document).ready(function () {

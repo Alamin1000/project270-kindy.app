@@ -396,7 +396,61 @@ p:last-child{
   grid-gap: 20px;
 }
 .about-grid__item {
-
+  background: #fff;
+  border-radius: 30px;
+}
+.about-grid__item.about-grid__item--1 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.about-grid__item.about-grid__item--1 .img-icon {
+  width: 75%;
+}
+.about-grid__item.about-grid__item--2 {
+  padding: 26px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+.about-grid__item.about-grid__item--2 .img-icon {
+	width: 37.4%;
+  margin: 0 0 10px;
+}
+.about-grid__item.about-grid__item--3 {
+  padding: 26px;
+  display: flex;
+  align-items: left;
+}
+.about-grid__item.about-grid__item--3 .img-icon {
+  margin: 0 20px 0 0;
+  width: 98px;
+}
+.about-grid__item.about-grid__item--4 {
+  padding: 26px;
+  display: flex;
+  align-items: left;
+}
+.about-grid__item.about-grid__item--4 .img-icon {
+  margin: 0 43px 0 0;
+  width: 77px;
+}
+.about-grid__item.about-grid__item--6 {
+  padding: 25px;
+  display: flex;
+  align-items: left;
+  align-items: center;
+}
+.about-grid__item.about-grid__item--6 .img-icon {
+  margin: 0 20px 0 0;
+  width: 75px;
+}
+.about-grid__item h3 {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 0;
 }
 .about-grid__item.item-r2 {
   grid-row: span 2;
@@ -577,7 +631,7 @@ p:last-child{
   border-bottom-right-radius: 0;
 }
 .method__right-blk .cont-blk {
-  padding: 26px 38px 55px;
+	padding: 35px 38px 55px;
 }
 /* ---method-section---end */
 
@@ -613,16 +667,18 @@ p:last-child{
   margin: 0;
 }
 .single-faq__title .ind {
-  font-size: 24px;
-  height: 40px;
-  width: 40px;
-  display: inline-block;
-  background: #EEF2FE;
-  border-radius: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+	font-size: 24px;
+	height: 40px;
+	width: 40px;
+	display: inline-block;
+	background: #EEF2FE;
+	border-radius: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding-top: 1px;
+	font-weight: 700;
 }
 .single-faq__title .ind::after {
   content: '\f067';

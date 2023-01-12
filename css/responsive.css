@@ -121,14 +121,9 @@
     .single-faq__title h3 {
         font-size: 20px;
     }
-    .single-faq__title .ind {
-        font-size: 19px;
-        height: 29px;
-        width: 29px;
-    }
     .single-faq {
         margin-bottom: 20px;
-        border-radius: 15px;
+        border-radius: 30px;
     }
     .single-faq__title {
         padding: 20px 25px;
@@ -153,6 +148,10 @@
     }
     .single-faq__collapsed__inner {
         padding: 0px 25px 25px;
+    }
+
+    .about-grid__item h3 {
+        font-size: 22px;
     }
 }
 
@@ -186,6 +185,31 @@
     .footer-menu-column {
         margin-bottom: 30px;
         width: 50%;
+    }
+
+
+    .about-grid__item {
+        border-radius: 15px;
+        background: #fff;
+        display: flex;
+        align-items: center;
+    }
+    .about-grid-slider-active .owl-stage {
+        display: flex;
+    }
+    .about-grid-slider-active .owl-stage .owl-item {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-grid-slider-active .owl-stage .owl-item > * {
+        flex-grow: 1;
+    }
+    .about-grid__item .img {
+        object-fit: contain;
+        border-radius: inherit;
+    }
+    .about-grid__item h3 {
+        font-size: 28px;
     }
 }
 
@@ -245,26 +269,7 @@
     }
 
 
-    .about-grid__item {
-        border-radius: 15px;
-        background: #fff;
-        display: flex;
-        align-items: center;
-    }
-    .about-grid-slider-active .owl-stage {
-        display: flex;
-    }
-    .about-grid-slider-active .owl-stage .owl-item {
-        display: flex;
-        flex-direction: column;
-    }
-    .about-grid-slider-active .owl-stage .owl-item > * {
-        flex-grow: 1;
-    }
-    .about-grid__item .img {
-        object-fit: contain;
-        border-radius: inherit;
-    }
+    
 
 
     .about-section {
@@ -393,6 +398,62 @@
     .copy-right {
         padding: 20px 0;
     }
+
+
+    .c-expand-button {
+        font-size: 24px;
+        height: 40px;
+        width: 40px;
+        padding-top: 1px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 50%;
+        background: var(--theme__color1);
+        color: #fff;
+        margin: 0 auto;
+    }
+    .mobile-ex-card.active .c-expand-button {
+        display: none;
+    }
+    .mobile-ex-card__body {
+        display: none;
+    }
+    .mobile-ex-card.active .mobile-ex-card__body {
+        display: block;
+    }
+
+    .about-grid__item {
+        width: 310px;
+    }
+    .about-grid__item h3 {
+        font-size: 22px;
+    }
+
+
+    .single-faq__title {
+        padding: 20px 20px;
+        gap: 10px;
+    }
+    .method__right-blk {
+        border-radius: 30px;
+    }
+    .method__left-blk {
+        border-radius: 30px;
+    }
+    .press__r-card {
+        border-radius: 30px;
+    }
+    .mission-card {
+        border-radius: 30px;
+    }
+    .about-grid__item {
+        border-radius: 30px;
+    }
+    .hero__content {
+        border-radius: 30px;
+    }
 }
 
 
@@ -403,9 +464,6 @@
     .about-grid-slider-active {
         width: 111%;
         margin-left: -5.5%;
-    }
-    .about-grid__item {
-        width: 250px;
     }
 }
 
