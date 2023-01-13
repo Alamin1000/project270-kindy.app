@@ -100,6 +100,15 @@ p:last-child{
 
 
 /* header */
+.sticky-wrapper.is-sticky{
+  z-index: 11;
+  transition: .3s;
+}
+.sticky-wrapper.is-sticky .header-section{
+  background-color: #fff;
+  transition: .3s;
+}
+
 .header-section {
   position: relative;
   top: 0;
@@ -119,6 +128,7 @@ p:last-child{
   width: 200px;
   display: inline-block;
 }
+
 .header__logo img {
 
 }

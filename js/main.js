@@ -81,6 +81,8 @@ $(document).ready(function () {
   $(function () {
     $.scrollUp();
   });
+  
+	$(".header-section").sticky({topSpacing:0});
 
   // preloader
   $("#preloader").fadeOut(500);
