@@ -29,14 +29,61 @@
       <!-- offcanvas-start -->
       <div class="offcanvas-menu">
         <div class="offmenu" id="menuParent">
-          <a href="#" class="offcanvas-close"><i class="fal fa-times"></i></a>
-          <ul class="mobile-menu">
-            <li><a href="#">Start</a></li>
-            <li><a href="#">Über uns</a></li>
-            <li><a href="#">Lösungen</a></li>
-            <li><a href="#">Preise</a></li>
-            <li><a href="#">Kontakt</a></li>
-          </ul>
+          <div class="offcanvas__header">
+            <a href="javascript:void(0)" class="header__logo offcanvas__logo">
+              <img src="images/logo.png" alt="" />
+            </a>
+            <a href="#" class="offcanvas-close"><i class="far fa-times"></i></a>
+          </div>
+          <div class="offcanvas__body">
+            <ul class="mobile-menu" id="mobile-menu">
+              <li><a href="#">Start</a></li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#off-drop-2"
+                  class="collapsed"
+                  >Über uns
+                  <img src="images/chevron-down.svg" alt="" class="chevron" />
+                </a>
+                <div
+                  class="dropdown-menu-custom collapse"
+                  id="off-drop-2"
+                  data-bs-parent="#mobile-menu"
+                >
+                  <ul>
+                    <li><a href="#">Für Eltern</a></li>
+                    <li><a href="#">Für Kita</a></li>
+                    <li><a href="#">Für Träger</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#off-drop-3"
+                  class="collapsed"
+                  >Lösungen
+                  <img src="images/chevron-down.svg" alt="" class="chevron"
+                /></a>
+                <div
+                  class="dropdown-menu-custom collapse"
+                  id="off-drop-3"
+                  data-bs-parent="#mobile-menu"
+                >
+                  <ul>
+                    <li><a href="#">Für Eltern</a></li>
+                    <li><a href="#">Für Kita</a></li>
+                    <li><a href="#">Für Träger</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li><a href="#">Preise</a></li>
+              <li><a href="#">Kontakt</a></li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="offcanvas-overlay"></div>

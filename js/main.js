@@ -6,7 +6,7 @@
     $(".offcanvas-menu").addClass("active");
     $(".offcanvas-overlay").addClass("active");
   });
-  $(".offcanvas-menu a").click(function () {
+  $(".offcanvas-close").click(function () {
     $(".offcanvas-menu").removeClass("active");
     $(".offcanvas-overlay").removeClass("active");
   });
@@ -81,8 +81,8 @@ $(document).ready(function () {
   $(function () {
     $.scrollUp();
   });
-  
-	$(".header-section").sticky({topSpacing:0});
+
+  $(".header-section").sticky({ topSpacing: 0 });
 
   // preloader
   $("#preloader").fadeOut(500);
