@@ -62,6 +62,25 @@
     owlInitialize();
   });
 
+  $(".start-hero__slider-active").owlCarousel({
+    loop: true,
+    margin: 0,
+    stagePadding: 0,
+    items: 1,
+    responsiveClass: true,
+    autoplay: true,
+    nav: false,
+    dots: true,
+    navText: [
+      '<span class="fas fa-chevron-left fa-2x"></span>',
+      '<span class="fas fa-chevron-right fa-2x"></span>',
+    ],
+    responsive: {
+      0: {},
+      767: {},
+    },
+  });
+
   document
     .querySelector(".c-expand-button")
     .addEventListener("click", function (e) {
@@ -83,6 +102,8 @@ $(document).ready(function () {
   });
 
   $(".header-section").sticky({ topSpacing: 0 });
+
+  $(".nice-select").niceSelect();
 
   // preloader
   $("#preloader").fadeOut(500);

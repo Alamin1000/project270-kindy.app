@@ -17,7 +17,7 @@
 }
 .default-button:hover {
     color: #fff;
-    background: var(--theme__color1);
+    background: var(--theme__color2);
 }
 
 .default-button--theme3 {
