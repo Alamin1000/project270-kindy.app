@@ -13,6 +13,20 @@
     .header-in {
         padding: 20px 0;
     }
+    .dropdown-menu {
+        min-width: 240px;
+        top: calc(100% + 10px) !important;
+        border-radius: 10px;
+    }
+    .dropdown-menu a {
+        min-height: 40px;
+        font-size: 13px;
+        padding: 8px 17px;
+    }
+    .dropdown-menu::after {
+        height: 8px;
+        width: 13px;
+    }
 
     .hero__content {
         padding: 20px 82px 50px;

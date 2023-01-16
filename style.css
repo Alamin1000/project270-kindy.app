@@ -147,7 +147,7 @@ p:last-child{
   gap: 21px;
 }
 .main-menu > ul > li {
-
+  position: relative;
 }
 .main-menu > ul > li > a {
   font-size: 24px;
@@ -158,6 +158,53 @@ p:last-child{
 .main-menu > ul > li > a:hover {
   color: var(--theme__color1);
 }
+.dropdown-menu {
+  min-width: 370px;
+  bottom: auto !important;
+  top:  calc(100% + 25px) !important;
+  left: 50% !important;
+  transform: translate(-50%,0) !important;
+  border: none;
+  background: #fff;
+  filter: drop-shadow(0px 15px 30px rgba(112, 144, 176, 0.5));
+  border-radius: 17px;
+  padding: 0;
+}
+.dropdown-menu::after {
+  content: '';
+  height: 12px;
+  width: 20px;
+  display: block;
+  background: #fff;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,-100%);
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+}
+.dropdown-menu ul {
+  padding: 5px 0;
+  border-radius: inherit;
+  overflow: hidden;
+}
+.dropdown-menu a {
+  padding: 5px 16px;
+  color: var(--theme__color2);
+  display: flex;
+  min-height: 62px;
+  font-size: 18px;
+  line-height: initial;
+  padding: 13px 22px;
+  min-width: 50px;
+  font-weight: 600;
+  color: #354052;
+  transition: 0.3s;
+}
+.dropdown-menu a:hover {
+  background: #F3F3F6;
+}
+
+
 .hr-button {
   padding: 7px 21px;
   font-size: 24px;
