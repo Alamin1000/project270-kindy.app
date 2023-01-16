@@ -22,7 +22,7 @@
     }
   });
 
-  function owlInitialize() {
+  function owlInitializeAGS() {
     let slider = $(".about-grid-slider-active");
     if ($(window).width() < 991) {
       slider.addClass("owl-carousel");
@@ -56,10 +56,44 @@
     }
   }
   $(document).ready(function (e) {
-    owlInitialize();
+    owlInitializeAGS();
   });
   $(window).resize(function () {
-    owlInitialize();
+    owlInitializeAGS();
+  });
+
+  function owlInitializePGS() {
+    let slider = $(".parent__grid-mbl-slider");
+    if ($(window).width() < 991) {
+      slider.addClass("owl-carousel");
+      slider.owlCarousel({
+        loop: true,
+        margin: 0,
+        stagePadding: 0,
+        responsiveClass: true,
+        items: 1,
+        autoplay: true,
+        nav: false,
+        dots: true,
+        navText: [
+          '<span class="fas fa-chevron-left fa-2x"></span>',
+          '<span class="fas fa-chevron-right fa-2x"></span>',
+        ],
+        responsive: {
+          0: {},
+        },
+      });
+      slider.owlCarousel("remove", 1).owlCarousel("update");
+    } else {
+      slider.owlCarousel("destroy");
+      slider.removeClass("owl-carousel");
+    }
+  }
+  $(document).ready(function (e) {
+    owlInitializePGS();
+  });
+  $(window).resize(function () {
+    owlInitializePGS();
   });
 
   $(".start-hero__slider-active").owlCarousel({
@@ -76,23 +110,29 @@
       '<span class="fas fa-chevron-right fa-2x"></span>',
     ],
     responsive: {
-      0: {},
+      0: {
+        stagePadding: 13,
+        margin: 20,
+        dots: false,
+      },
       767: {},
     },
   });
 
-  document
-    .querySelector(".c-expand-button")
-    .addEventListener("click", function (e) {
-      let card = this.parentElement;
-      card.classList.add("active");
-    });
-  document
-    .querySelector(".c-expand-button-2")
-    .addEventListener("click", function (e) {
-      let card = this.parentElement;
-      card.classList.add("active");
-    });
+  try {
+    document
+      .querySelector(".c-expand-button")
+      .addEventListener("click", function (e) {
+        let card = this.parentElement;
+        card.classList.add("active");
+      });
+    document
+      .querySelector(".c-expand-button-2")
+      .addEventListener("click", function (e) {
+        let card = this.parentElement;
+        card.classList.add("active");
+      });
+  } catch {}
 })(jQuery);
 
 $(document).ready(function () {
