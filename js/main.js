@@ -64,7 +64,8 @@
 
   function owlInitializePGS() {
     let slider = $(".parent__grid-mbl-slider");
-    if ($(window).width() < 991) {
+    if ($(window).width() < 767) {
+      console.log("hello");
       slider.addClass("owl-carousel");
       slider.owlCarousel({
         loop: true,
@@ -72,7 +73,7 @@
         stagePadding: 0,
         responsiveClass: true,
         items: 1,
-        autoplay: true,
+        // autoplay: true,
         nav: false,
         dots: true,
         navText: [
@@ -83,7 +84,7 @@
           0: {},
         },
       });
-      slider.owlCarousel("remove", 1).owlCarousel("update");
+      // slider.owlCarousel("remove", 1).owlCarousel("update");
     } else {
       slider.owlCarousel("destroy");
       slider.removeClass("owl-carousel");

@@ -869,7 +869,8 @@ p:last-child{
 }
 
 .start-hero__slider {
-
+  border-radius: 30px;
+  overflow: hidden;
 }
 .start-hero__slider .owl-dots {
   bottom: 28px;
@@ -878,7 +879,7 @@ p:last-child{
   transform: translate(-50%,0);
 }
 .start-hero__slide {
-  border-radius: 30px;
+  
 }
 .start-hero__slide__mobile-img {
   width: 100%;
@@ -1188,6 +1189,7 @@ p:last-child{
   border-radius: 50%;
   background: #fff;
   border-color: transparent;
+  color: #323232;
 }
 .input-x {
   padding: 10px 20px;
@@ -1212,9 +1214,16 @@ p:last-child{
 }
 .input-x.nice-select::after {
   height: 11px;
-  width: 11px;
+  width: 20px;
   right: 22px;
   margin-top: -8px;
+  background: url('images/select-chevron.svg') no-repeat center center/contain;
+  border: none;
+  transform: none;
+  transform-origin: 50% 50%;
+}
+.input-x.nice-select.open::after {
+  transform: rotate(180deg); 
 }
 /* ---input-x---end */
 
@@ -1450,14 +1459,16 @@ p:last-child{
 }
 .input-y.nice-select::after {
   height: 11px;
-  width: 11px;
+  width: 20px;
   right: 22px;
   margin-top: -8px;
-  border-color: #7F8FA4;
-  /* background: #7F8FA4;
-  clip-path: polygon(0 100%, 100% 0, 100% 100%);
-  box-shadow: none;
-  background-clip: content-box; */
+  background: url('images/select-chevron.svg') no-repeat center center/contain;
+  border: none;
+  transform: none;
+  transform-origin: 50% 50%;
+}
+.input-y.nice-select.open::after {
+  transform: rotate(180deg); 
 }
 .y-option {
   display: flex;
